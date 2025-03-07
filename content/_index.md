@@ -7,7 +7,7 @@ description: "Ilesh Darji - Senior Automation Test Engineer, Python Developer & 
 ## 👋 Hello & Welcome to my website!
 
 <!-- ![Profile Picture](images/profile_circular.png) -->
-<img src="/images/profile_circular.png" alt="Ilesh Darji" width="200" height="200" style="float: left; margin-right: 20px; border-radius: 50%;">
+<img src="/images/profile_circular.png" alt="Ilesh Darji" width="200" height="200" style="float: right; margin-left: 20px; border-radius: 50%;">
 
 ### **I am Ilesh Darji, Senior Automation Test Engineer & Python Developer**  
 
