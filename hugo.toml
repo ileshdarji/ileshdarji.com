@@ -3,6 +3,12 @@ languageCode = "en-us"
 title = "Ilesh Darji"
 theme = "maverick"
 
+googleAnalytics = "G-2C8HSWCCE5"
+
+
+[services.googleanalytics]
+  id = "G-2C8HSWCCE5"
+
 [permalinks]
   pages = "/:slug"
 
