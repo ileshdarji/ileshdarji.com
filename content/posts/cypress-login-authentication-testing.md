@@ -89,4 +89,4 @@ Whether you're testing login forms or token-based sessions, Cypress offers multi
 
 ---
 
-🔜 **Next Up:** Learn how to handle multi-user and role-based testing in Cypress!
+**Next in Series:** [Multi-User and Role-Based Testing in Cypress](/posts/multi-user-role-based-testing-in-cypress/)

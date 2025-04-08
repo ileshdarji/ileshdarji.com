@@ -88,4 +88,4 @@ Mocking APIs with `cy.intercept()` allows you to test faster, simulate real-worl
 
 ---
 
-🔜 **Next Up:** Learn how to run Cypress tests in a CI/CD pipeline like GitHub Actions!
+**Next in Series:** [Running Cypress Tests in CI/CD with GitHub Actions](/posts/cypress-ci-cd-github-actions/)

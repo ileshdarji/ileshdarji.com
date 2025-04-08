@@ -94,4 +94,4 @@ Running Cypress tests in GitHub Actions is one of the easiest ways to set up aut
 
 ---
 
-🔜 **Next Up:** Learn how to enhance your Cypress tests using powerful plugins!
+**Next in Series:** [Extending Cypress with Plugins: Unlock Extra Power](/posts/extending-cypress-with-plugins/)

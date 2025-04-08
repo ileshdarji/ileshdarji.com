@@ -79,4 +79,4 @@ Start using fixtures today to make your tests more efficient and maintainable!
 
 ---
 
-🔜 **Next Up:** Learn how to mock network requests in Cypress with `cy.intercept()`!
+**Next in Series:** [Mocking API Responses with cy.intercept() in Cypress](/posts/mocking-api-with-cy-intercept/)

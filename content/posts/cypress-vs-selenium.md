@@ -49,4 +49,4 @@ Cypress is not a full Selenium replacement **yet**, but it's a fantastic tool fo
 
 ---
 
-**Up Next:** Learn [10 Cypress commands every tester should know](/posts/top-10-cypress-commands/).</file>
+**Next in Series:** [Top 10 Cypress Commands Every Tester Should Know](/posts/top-10-cypress-commands/)

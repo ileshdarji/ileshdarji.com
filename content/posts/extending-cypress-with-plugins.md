@@ -126,4 +126,4 @@ Plugins help you level up your Cypress tests without reinventing the wheel. From
 
 ---
 
-🔜 **Next Up:** Learn how to test login flows and handle authentication with Cypress!
+**Next in Series:** [Testing Login and Authentication Flows in Cypress](/posts/cypress-login-authentication-testing/)

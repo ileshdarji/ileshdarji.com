@@ -1,6 +1,6 @@
 +++
 title = "Multi-User and Role-Based Testing in Cypress"
-date = 2025-01-08
+date = 2025-02-25
 tags = ["Cypress", "Role-Based", "Multi-User", "Testing"]
 description = "Learn how to structure Cypress tests to simulate different user roles, permissions, and access levels in your application."
 draft = false
@@ -102,4 +102,4 @@ Role-based testing in Cypress ensures your app’s permissions system works as e
 
 ---
 
-🎉 That wraps up our 10-part Cypress blog series! Thanks for following along. Stay tuned for more testing tips at [ileshdarji.com](https://ileshdarji.com).
+**Next in Series:** [Dealing with Flaky Tests in Cypress: Root Causes and Real Fixes](/posts/dealing-with-flaky-tests-in-cypress/)
