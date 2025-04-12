@@ -32,6 +32,12 @@ A new way to own your digital presence.
 A human-first protocol for the internet.  
 Built with privacy, dignity, and security in mind.
 
+As someone who’s spent years testing and automating systems, I’ve always cared about one thing: **truth**.  
+Does the system do what it says it does? Is it trustworthy?
+
+But now, I’m shifting that lens toward something bigger — **what it means to be real in a digital world.**  
+It’s not just about catching bugs anymore. It’s about **designing trust** from the ground up.
+
 ---
 
 ## 🧭 Why This Matters
