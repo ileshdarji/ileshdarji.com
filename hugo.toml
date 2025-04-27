@@ -56,7 +56,7 @@ googleAnalytics = "G-2C8HSWCCE5"
     lineNumbersInTable = true
     noClasses = true
     noHl = false
-    style = 'monokailight'
+    style = 'github'
     tabWidth = 4
 
 [taxonomies]

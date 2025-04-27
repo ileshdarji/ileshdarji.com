@@ -1,0 +1,19 @@
+.copy-code-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: background 0.3s, opacity 0.3s;
+  }
+  
+  .copy-code-button:hover {
+    background: #1d4ed8;
+    opacity: 1;
+  }
