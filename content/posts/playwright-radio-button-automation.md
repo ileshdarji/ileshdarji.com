@@ -1,6 +1,6 @@
 +++
 date = 2025-04-27
-draft = true
+draft = false
 title = 'Playwright Radio Button Automation: Handling Custom Radio Buttons the Right Way'
 description = 'Learn how to correctly automate custom radio buttons in Playwright, using dynamic label clicking and real-world best practices. Solve strict mode violations and flaky tests with robust strategies.'
 tags = ['playwright', 'playwright automation', 'qa automation', 'radio button automation', 'selenium vs playwright', 'sdet', 'automation best practices']
