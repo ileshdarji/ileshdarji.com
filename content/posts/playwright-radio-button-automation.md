@@ -3,7 +3,7 @@ date = 2025-04-27
 draft = false
 title = 'Playwright Radio Button Automation: Handling Custom Radio Buttons the Right Way'
 description = 'Learn how to correctly automate custom radio buttons in Playwright, using dynamic label clicking and real-world best practices. Solve strict mode violations and flaky tests with robust strategies.'
-tags = ['playwright', 'playwright automation', 'qa automation', 'radio button automation', 'selenium vs playwright', 'sdet', 'automation best practices', 'TypeScript', 'JavaScript']
+tags = ['playwright', 'playwright-automation', 'qa-automation', 'radio-button-automation', 'selenium-vs-playwright', 'sdet', 'automation-best-practices', 'TypeScript', 'JavaScript']
 +++
 
 In this post, I’ll walk you through a real-world **Playwright automation** challenge I encountered while automating a web form — and how I solved it elegantly to create stable, non-flaky tests.
@@ -50,7 +50,7 @@ After careful debugging and DOM inspection, I found that:
 
 Here’s the dynamic mapping solution I implemented inside my Playwright Page Object Model (POM):
 
-```ts
+```typescript
 async selectGender(gender: string) {
   const genderIdMap: Record<string, string> = {
     'Male': 'gender-radio-1',
@@ -74,7 +74,7 @@ Realistic user simulation.
 The `selectGender()` method wasn't just written in isolation — it was used as part of a complete dynamic form filling strategy.  
 I integrated it into a broader `fillForm()` method that accepts a data object and populates the form accordingly:
 
-```ts
+```typescript
 async fillForm(data: {
   firstName: string;
   lastName: string;
@@ -96,7 +96,7 @@ async fillForm(data: {
 
 And inside my Playwright test, the usage looked clean and highly readable:
 
-```ts
+```typescript
 test('Fill out the form and submit with valid data', async ({ page }) => {
   const practiceFormPage = new PracticeFormPage(page);
   await practiceFormPage.goto();
