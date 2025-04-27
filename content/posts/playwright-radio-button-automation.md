@@ -51,17 +51,20 @@ After careful debugging and DOM inspection, I found that:
 Here’s the dynamic mapping solution I implemented inside my Playwright Page Object Model (POM):
 
 ```typescript
-async selectGender(gender: string) {
-  const genderIdMap: Record<string, string> = {
-    'Male': 'gender-radio-1',
-    'Female': 'gender-radio-2',
-    'Other': 'gender-radio-3'
-  };
+type Gender = "Male" | "Female" | "Other";
 
+async selectGender(gender: Gender) {
+  const genderIdMap: Record<Gender, string> = {
+    Male: 'gender-radio-1',
+    Female: 'gender-radio-2',
+    Other: 'gender-radio-3'
+  };
   const genderId = genderIdMap[gender];
   await this.page.locator(`label[for="${genderId}"]`).click();
 }
 ```
+
+*We also strongly typed the gender selection to ensure only valid values are allowed, improving TypeScript safety.*
 
 Problem solved.  
 No flaky behavior.  
