@@ -4,30 +4,52 @@ layout: "index"
 description: "Ilesh Darji - Senior Automation Test Engineer, Python Developer & ETL Specialist"
 ---
 
-## 👋 Hello & Welcome to my website!
+# Welcome!
 
-<!-- ![Profile Picture](images/profile_circular.png) -->
-<img src="/images/profile_circular.png" alt="Ilesh Darji" width="200" height="200" style="float: right; margin-left: 20px; border-radius: 50%;">
+## Ilesh Darji – Senior Software Development Engineer in Test (SDET) & Python Developer
 
-### **I am Ilesh Darji, Senior Automation Test Engineer & Python Developer**  
-
-🚀 Passionate about **test automation, Python development, and DevOps**, I help businesses **streamline CI/CD, optimize software testing, and improve quality assurance** with scalable automation solutions.
-
-📌 **Specialties:** Test Automation (Selenium, Playwright, Appium, Cypress, K6) | Python & Java Development | ETL & Data Pipelines | CI/CD (Jenkins, GitHub Actions, Azure DevOps) | AWS & Cloud Automation | API & Database Testing | C#, .NET, JavaScript, TypeScript  
+I specialize in Test Automation, Python Development, and DevOps. I create reliable automation frameworks, write clean and maintainable code, and implement efficient CI/CD pipelines. My focus is on delivering high-quality software solutions that drive business success.
 
 ---
 
-## **About Me**
-I’m **Ilesh Darji**, an expert in **test automation, Python development, and DevOps**. With extensive experience in **building automation frameworks, optimizing CI/CD pipelines, and driving software quality**, I specialize in:
+## Areas of Expertise
 
-✅ **Automation Testing** – Selenium, Playwright, Cucumber, Appium, Cypress, K6, Behave  
-✅ **Programming** – Python, Java, Ruby, C#, JavaScript, TypeScript, .NET  
-✅ **ETL & Data Pipelines** – Extracting, transforming, and loading large datasets  
-✅ **DevOps & CI/CD** – Jenkins, GitHub Actions, Docker, Kubernetes, Azure DevOps  
-✅ **Cloud & Infrastructure** – AWS, Azure, Terraform  
-✅ **API & Database Testing** – REST, GraphQL, Postman, SQL  
-✅ **Software Development Practices** – BDD, TDD  
+- Automation Testing: Selenium, Playwright, Appium, Cypress, K6, Behave  
+- Programming Languages: Python, Java, Ruby, C#, JavaScript, TypeScript, .NET  
+- ETL & Data Pipelines: Extracting, transforming, and loading large datasets  
+- DevOps & CI/CD: Jenkins, GitHub Actions, Docker, Kubernetes, Azure DevOps  
+- Cloud & Infrastructure: AWS, Azure, Terraform  
+- API & Database Testing: REST, GraphQL, Postman, SQL  
+- Software Development Practices: BDD, TDD  
 
 [Read More](about)
 
 ---
+
+<div id="subscribe" class="my-12">
+  <iframe 
+    id="subscribeFrame"
+    src="/subscribe.html" 
+    class="bg-transparent w-full max-w-3xl mx-auto block border border-gray-300 dark:border-gray-700"
+    frameborder="0"
+    scrolling="no"
+    width="100%"
+  ></iframe>
+</div>
+
+<script>
+  window.addEventListener("message", (event) => {
+    if (event.data.iframeHeight) {
+      const iframe = document.getElementById("subscribeFrame");
+      if (iframe) {
+        iframe.style.height = event.data.iframeHeight + "px";
+      }
+    }
+  });
+</script>
+
+---
+
+<div class="text-center text-gray-500 text-sm mt-12">
+  Thanks for visiting — keep building, keep growing! 🚀
+</div>

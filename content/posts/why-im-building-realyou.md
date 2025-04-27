@@ -1,3 +1,4 @@
++++
 title = "Why I'm Building RealYou"
 date = 2025-04-16
 tags = ["RealYou", "Proof of Humanity", "Digital Identity", "AI", "Web3", "Privacy", "Startup Journey"]
