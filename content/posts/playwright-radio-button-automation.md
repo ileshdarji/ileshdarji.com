@@ -3,7 +3,7 @@ date = 2025-04-27
 draft = false
 title = 'Playwright Radio Button Automation: Handling Custom Radio Buttons the Right Way'
 description = 'Learn how to correctly automate custom radio buttons in Playwright, using dynamic label clicking and real-world best practices. Solve strict mode violations and flaky tests with robust strategies.'
-tags = ['playwright', 'playwright automation', 'qa automation', 'radio button automation', 'selenium vs playwright', 'sdet', 'automation best practices']
+tags = ['playwright', 'playwright automation', 'qa automation', 'radio button automation', 'selenium vs playwright', 'sdet', 'automation best practices', 'TypeScript', 'JavaScript']
 +++
 
 In this post, I’ll walk you through a real-world **Playwright automation** challenge I encountered while automating a web form — and how I solved it elegantly to create stable, non-flaky tests.
