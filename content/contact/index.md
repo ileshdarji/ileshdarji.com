@@ -8,7 +8,7 @@ hideDate: true
 <p>I’d love to hear from you — whether it's about working together, collaborating, or general questions. Drop me a message below!</p>
 
 <div style="border: 1px solid #333; padding: 2rem; max-width: 600px; margin: 2rem auto; background-color: #f9f9f9;">
-<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact-thank-you/">
+<form name="contact" netlify method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact-thank-you/">
   <input type="hidden" name="form-name" value="contact">
   <p style="display:none;">
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
