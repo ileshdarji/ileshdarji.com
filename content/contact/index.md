@@ -10,6 +10,9 @@ hideDate: true
 <div style="border: 1px solid #333; padding: 2rem; max-width: 600px; margin: 2rem auto; background-color: #f9f9f9;">
 <form name="contact" netlify method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact-thank-you/">
   <input type="hidden" name="form-name" value="contact">
+  <input type="hidden" name="_email-template" value="Name: {{ name }}<br>Email: {{ email }}<br>Subject: {{ subject }}<br>Message:<br>{{ message }}">
+
+  <input type="hidden" name="form-name" value="contact">
   <p style="display:none;">
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
   </p>
