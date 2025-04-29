@@ -24,8 +24,4 @@ I’m **Ilesh Darji**, a **Senior Automation Test Engineer, Python Developer & E
 - End-to-End CI/CD Integration – Implemented a GitHub Actions-based CI/CD pipeline, automating deployments and test execution.  
 - Optimized ETL Pipeline for Large-Scale Data Processing – Designed and developed an ETL pipeline using Python & SQL, reducing data transformation time by 50%.  
 
-### **Get in Touch**
-Email: [hello@ileshdarji.com](mailto:hello@ileshdarji.com)  
-LinkedIn: [linkedin.com/in/ileshdarji](https://linkedin.com/in/ileshdarji)  
-GitHub: [github.com/ileshdarji](https://github.com/ileshdarji)  
-Location: Rugby, UK (Available for remote work & consulting)
+[Connect with me](/contact) to explore how we can build something great together.
