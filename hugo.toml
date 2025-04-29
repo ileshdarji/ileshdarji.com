@@ -14,8 +14,8 @@ googleAnalytics = "G-2C8HSWCCE5"
 
 [params]
   logo = '/assets/favicon.ico'
-  description = "A minimal hugo theme focus on content"
-  author = 'Calvin Tran'
+  description = "Senior SDET and Python Developer | Helping teams scale automation and deliver high-quality software."
+  author = 'Ilesh Darji'
   items = 10
 
   [params.comments]
@@ -27,7 +27,7 @@ googleAnalytics = "G-2C8HSWCCE5"
 [menu]
   [[menu.main]]
     identifier = "contact"
-    name = "Contact me"
+    name = "Contact"
     url = "/contact/"
     weight = "-110"
   [[menu.main]]
@@ -37,7 +37,7 @@ googleAnalytics = "G-2C8HSWCCE5"
     weight = "-110"
   [[menu.main]]
     identifier = "posts"
-    name = "Post"
+    name = "Posts"
     url = "/posts/"
     weight = -200
 
