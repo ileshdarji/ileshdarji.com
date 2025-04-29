@@ -53,6 +53,6 @@ hideDate: true
 <p class="text-center text-sm mt-6">
 Or connect with me directly:<br>
 <a href="mailto:ilesh@ileshdarji.com">ilesh@ileshdarji.com</a> | 
-<a href="https://www.linkedin.com/in/ileshdarji" target="_blank">LinkedIn</a> | 
+<a href="https://www.linkedin.com/in/ilesh-d-25179713" target="_blank">LinkedIn</a> | 
 <a href="https://github.com/ileshdarji" target="_blank">GitHub</a>
 </p>
