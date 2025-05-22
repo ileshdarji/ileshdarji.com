@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Results</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      margin-bottom: 1rem;
+    }
+
+    .search-result {
+      margin-bottom: 1.5rem;
+    }
+
+    .search-result h3 {
+      margin: 0;
+    }
+
+    .search-result p {
+      margin: 0.2rem 0 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Search</h1>
+  <input type="text" id="search-box" placeholder="Type to search..." />
+  <div id="search-results"></div>
+
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get("q") || "";
+    document.getElementById("search-box").value = query;
+
+    let idx = null;
+    let documents = [];
+
+    fetch("/index.json")
+      .then((res) => res.json())
+      .then((data) => {
+        documents = data;
+        idx = lunr(function () {
+          this.ref("permalink");
+          this.field("title");
+          this.field("summary");
+          this.field("content");
+
+          documents.forEach((doc) => this.add(doc));
+        });
+
+        if (query) runSearch(query);
+      });
+
+    function runSearch(q) {
+      const results = idx.search(q);
+      const resultsDiv = document.getElementById("search-results");
+      resultsDiv.innerHTML = "";
+
+      if (results.length > 0) {
+        results.forEach((r) => {
+          const doc = documents.find((d) => d.permalink === r.ref);
+          const result = document.createElement("div");
+          result.className = "search-result";
+          result.innerHTML = `
+            <h3><a href="${doc.permalink}">${doc.title}</a></h3>
+            <p>${doc.summary || ""}</p>`;
+          resultsDiv.appendChild(result);
+        });
+      } else {
+        resultsDiv.innerHTML = "<p>No results found.</p>";
+      }
+    }
+
+    document.getElementById("search-box").addEventListener("input", function () {
+      runSearch(this.value.trim());
+    });
+  </script>
+</body>
+</html>

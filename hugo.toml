@@ -72,6 +72,6 @@ googleAnalytics = "G-2C8HSWCCE5"
 
 [outputFormats.JSON]
   mediatype = "application/json"
-  baseName = "feed"
+  baseName = "index"
 
 ignoreErrors = ["error-remote-getjson"]

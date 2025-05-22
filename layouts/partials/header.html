@@ -1,0 +1,22 @@
+<header>
+    <p style="padding: 0;margin: 0;">
+      <a href="{{ .Site.BaseURL }}">
+        <b>{{ .Site.Title }}</b>
+        <span class="text-stone-500 animate-blink">▮</span>
+      </a>
+    </p>
+    <ul style="padding: 0; margin: 0; display: flex; align-items: center; gap: 1.25rem;">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+      <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+        <a href="{{ .URL }}"><span>{{ .Name }}</span></a>
+      </li>
+      {{ end }}
+      <li>
+        <form id="site-search" action="/search.html" method="get" style="margin: 0;">
+          <input type="text" id="search-input" name="q" placeholder="Search..." style="padding: 0.3rem 0.6rem; border: 1px solid #ccc;">
+        </form>
+      </li>
+    </ul>
+  </header>
+  <hr class="hr-list" style="padding: 0;margin: 0;">
