@@ -1,7 +1,7 @@
 +++
 title = "How to Install Nodejs on Mac"
 date = 2025-06-09
-tags = ["Node.js", "Mac", "Installation Guide", "JavaScript", "Playwright Setup"]
+tags = ["Node.js", "Mac", "Installation Guide", "JavaScript", "PlaywrightSetup", "Playwright"]
 description = "A step-by-step guide to installing Node.js on macOS — ideal for beginners setting up Playwright or other JavaScript tools."
 draft = false
 +++
