@@ -7,6 +7,11 @@
   <div class="content">
     {{ partial "header.html" . }}
     <section>
+      {{ if eq .Section "posts" }}
+      <nav id="post-return" class="post-return" aria-label="Return to post listing" hidden>
+        <a id="back-to-list" href="{{ "/posts/" | relURL }}">← Back to posts</a>
+      </nav>
+      {{ end }}
       <h2 class="post">{{ .Title }}</h2>
       {{ .Content }}
       {{ if eq .Section "posts" }}
@@ -31,5 +36,8 @@
     {{ end }}
   </div>
 </main>
+{{ if eq .Section "posts" }}
+<script src="{{ "/js/post-return.js" | relURL }}" defer></script>
+{{ end }}
 </body>
 </html>

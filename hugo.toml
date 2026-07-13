@@ -40,6 +40,11 @@ googleAnalytics = "G-2C8HSWCCE5"
     name = "Posts"
     url = "/posts/"
     weight = -200
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = -150
 
 [markup]
   [markup.goldmark.renderer]
@@ -63,7 +68,7 @@ googleAnalytics = "G-2C8HSWCCE5"
   tag = "tags"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "SearchIndex"]
   section = ["HTML"]
 
 [outputFormats.RSS]
@@ -73,5 +78,11 @@ googleAnalytics = "G-2C8HSWCCE5"
 [outputFormats.JSON]
   mediatype = "application/json"
   baseName = "feed"
+
+[outputFormats.SearchIndex]
+  mediatype = "application/json"
+  baseName = "search-index"
+  isPlainText = true
+  notAlternative = true
 
 ignoreErrors = ["error-remote-getjson"]
