@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+  {{ partial "head.html" . }}
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+    <div class="content">
+      {{ partial "header.html" . }}
+      <section class="search-page">
+        <h1>{{ .Title }}</h1>
+        <p>Search posts by title, topic, or keyword.</p>
+
+        <div id="search-app" data-index-url="{{ "search-index.json" | relURL }}">
+          <form class="search-form" role="search">
+            <label class="search-label" for="search-input">Search posts</label>
+            <input
+              class="search-input"
+              id="search-input"
+              name="q"
+              type="search"
+              placeholder="Loading posts…"
+              autocomplete="off"
+              spellcheck="false"
+              aria-describedby="search-status"
+              aria-controls="search-results"
+              disabled>
+          </form>
+
+          <p id="search-status" class="search-status" role="status" aria-live="polite">Loading posts…</p>
+          <ol id="search-results" class="search-results" aria-label="Search results"></ol>
+        </div>
+
+        <noscript>
+          <p>Search requires JavaScript. You can still browse every post from the <a href="{{ "/posts/" | relURL }}">posts page</a>.</p>
+        </noscript>
+      </section>
+    </div>
+  </main>
+  <script src="{{ "/js/search.js" | relURL }}" defer></script>
+</body>
+</html>

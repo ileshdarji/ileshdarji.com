@@ -13,7 +13,79 @@
     transition: background 0.3s, opacity 0.3s;
   }
   
-  .copy-code-button:hover {
+.copy-code-button:hover {
     background: #1d4ed8;
     opacity: 1;
   }
+
+.search-form {
+  margin: 2rem 0 1rem;
+}
+
+.search-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #777;
+  border-radius: 0;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+}
+
+.search-input:focus {
+  outline: 3px solid #bbb;
+  outline-offset: 2px;
+}
+
+.search-input:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.search-status {
+  min-height: 1.5rem;
+  color: #555;
+}
+
+.search-results {
+  padding: 0;
+  list-style: none;
+}
+
+.search-result {
+  padding: 1.25rem 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.search-result-title {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.search-result-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin-top: 0.25rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.search-result-excerpt {
+  margin: 0.5rem 0 0;
+}
+
+.post-return {
+  margin: 1.5rem 0;
+}
+
+.post-return a {
+  font-weight: 600;
+}
